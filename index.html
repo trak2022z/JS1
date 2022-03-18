@@ -1,0 +1,113 @@
+<!--
+  Name: Khang Zhie Phoong
+  Date: April 20th,  2019
+  Section: CSE 154 AQ
+  This is the html page for Creative project 2, which allows a user to experiment with different
+  flexbox container properties.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexing Time</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Let's Flex!</h1>
+    </header>
+
+    <main>
+      <article>
+        <p>
+          This webpage is to allow anyone to easily experiment with flexbox container properties,
+          and so will be able to better understand different container features of flexbox and
+          how they work. First add items into the box and then start exploring using the dropdown
+          options below, click "GO!" and see how the items are displayed on the page. The suns may
+          go out of the box, what can you do to make them stay within the box?
+        </p>
+      </article>
+      <section id="settings">
+        <button id="add-btn">Add Item</button>
+        <button id="remove-btn">Remove Item</button>
+        <button id="refresh-btn">Complete Refresh</button>
+      </section>
+
+      <section id="flex-box">
+        <div>
+        </div>
+      </section>
+
+      <section id="flex-options">
+        <div>
+          <h3>flex-direction</h3>
+          <select id="flex-direction">
+            <option value="none" selected>Select a property</option>
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+        </div>
+        <div>
+          <h3>flex-wrap</h3>
+          <select id="flex-wrap">
+            <option value="none" selected>Select a property</option>
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+            <option value="wrap-reverse">wrap-reverse</option>
+          </select>
+        </div>
+        <div>
+          <h3>justify-content</h3>
+          <select id="justify-content">
+            <option value="none" selected>Select a property</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+          </select>
+        </div>
+        <div>
+          <h3>align-items</h3>
+          <select id="align-items">
+            <option value="none" selected>Select a property</option>
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+          </select>
+        </div>
+        <div>
+          <h3>align-content</h3>
+          <select id="align-content">
+            <option value="none" selected>Select a property</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </div>
+      </section>
+      <section id="go-refresh">
+        <button id="go-btn">Go!</button>
+        <button id="reset-btn">Reset Properties</button>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        This is a Creative Project (CP2) by Khang Zhie Phoong for CSE 154 Spring 2019.
+      </p>
+    </footer>
+  </body>
+</html>
+
